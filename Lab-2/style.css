@@ -72,3 +72,54 @@
   background-color: rgb(0, 255, 0, 0.4);;
   z-index: 3;
 }
+
+.main {
+  height: 200px;
+  border: 1px solid black;
+  border-spacing: 0;
+}
+
+.row_one {
+  height: 50%;
+  background-color: #358f8f;
+  color: #1C0813;
+}
+
+.row_one:hover {
+  background-color: #dc4646;
+}
+
+.row_two {
+  height: calc(100% / 3);
+  background-color: #f5f535;
+  color: #000000;
+}
+
+.row_two:hover {
+  background-color: #0A0A0D;
+  color: #fff;
+}
+
+.row_three {
+  height: calc(100% / 6);
+}
+
+.row_one td,
+.row_two td,
+.row_three td {
+  width: 200px;
+  border: 1px solid black;
+  padding: 0;
+}
+
+.daughter_table {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-spacing: 0;
+  border: none;
+}
+
+td.noBorder {
+  border: none;
+}
