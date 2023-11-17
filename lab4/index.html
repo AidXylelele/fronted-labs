@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="html-info-page, personal-information" />
+    <meta
+      name="description"
+      content="This is a basic HTML page provides information about me"
+    />
+    <title>Шевирьов Владислав Олегович ІМ-11</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="personal-info">
+      <div class="name">
+        <h2>Шевирьов Владислав Олегович</h2>
+      </div>
+      <div class="birthday">
+        <p>Місце народження: 21.10.2004, м.Донецьк</p>
+      </div>
+      <div class="secondary-education">
+        <p>Освіта: Школа №45 м.Донецьк</p>
+      </div>
+      <div class="higher-education" style="margin-left: 5%">
+        <p>
+          Національний технічний університет України "Київський політехнічний
+          інститут імені Ігоря Сікорського"
+        </p>
+      </div>
+    </div>
+    <div class="hobbies">
+      <p>Хоббі:</p>
+      <ul>
+        <li
+          id="coding"
+          onclick="setColorById('coding')"
+          class="colouredElements"
+        >
+          Програмування
+        </li>
+        <li class="colouredElements" onclick="setColorByQuery()">Спорт</li>
+        <li>Автомобілі</li>
+      </ul>
+    </div>
+    <div class="books">
+      <p>Улюблені книги:</p>
+      <ol>
+        <li>Володар перснів</li>
+        <li>Маленький принц</li>
+        <li>Відьмак</li>
+      </ol>
+    </div>
+    <div class="city">
+      <p>
+        Берлін - столиця та найбільше місто Німеччини, яке вражає своєю багатою
+        історією та сучасними досягненнями. Місто розташоване на берегах річки
+        Спрєї і славиться своєю архітектурною різноманітністю, від історичних
+        пам'ятників до сучасних хмарочосів.
+      </p>
+    </div>
+
+    <div class="city-photo">
+      <a href="https://www.berlin.de/en/"
+        ><img
+          width="300"
+          src="https://media.istockphoto.com/id/503874284/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%B1%D0%B5%D1%80%D0%BB%D0%B8%D0%BD-%D1%81-%D1%80%D0%B5%D0%BA%D1%83-%D1%88%D0%BF%D1%80%D0%B5%D0%B5-%D0%BD%D0%B0-%D0%B7%D0%B0%D0%BA%D0%B0%D1%82%D0%B5-%D0%B3%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F.jpg?s=612x612&w=0&k=20&c=Oer1iCAHUWu8j-jZ93lbeqezhmNaNersbcxrgK4Mj-Q="
+          alt="image"
+          id="cityPhoto"
+      /></a>
+    </div>
+     </div>
+    <div class="buttons">
+      <button onclick="addImg()" class="button">Додати</button>
+      <button onclick="resizeImg('increase')" class="button">Збільшити</button>
+      <button onclick="resizeImg('decrease')" class="button">Зменшити</button>
+      <button onclick="deleteImg()" class="button">Видалити</button>
+    </div>
+  </body>
+</html>
